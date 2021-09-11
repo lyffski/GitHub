@@ -1,0 +1,1 @@
+The beauty of Front-End lives in its Visuality aspects, and with addition of JavaScript it is not only beauty but also functionality that is also supported by the Back-End Web Development.  
