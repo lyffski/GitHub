@@ -700,8 +700,6 @@ footer .text span a:hover{
 }
 
 
-
-
 .cool-link {
   display: inline-block;
   color: #000;
@@ -709,15 +707,17 @@ footer .text span a:hover{
 }
 
 .cool-link::after {
+  border-bottom: none;
   content: '';
   display: block;
   width: 0;
   height: 2px;
-  background: #000;
+  background: var(--primary-color);
   transition: width .3s;
 }
 
 .cool-link:hover::after {
+  color: var(--primary-color);
   width: 100%;
   transition: width .3s;
 }
