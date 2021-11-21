@@ -119,8 +119,7 @@ ggplot(data.combined[1:891,], aes(x = sex, fill = survived)) +
   labs(fill = "Survived")
 
 
-# OK, age and sex seem pretty important as derived from analysis of title, let's take a closer 
-# look at the distibutions of age over entire data set
+# age and sex is important as derived from analysis of title, 
 summary(data.combined$age)
 summary(data.combined[1:891,"age"])
 
@@ -158,16 +157,13 @@ length(which(misses.alone$age <= 14.5))
 
 # Move on to the sibsp variable, summarize the variable
 summary(data.combined$sibsp)
-
-
-# Can we treat as a factor?
 length(unique(data.combined$sibsp))
 
 
 data.combined$sibsp <- as.factor(data.combined$sibsp)
 
 
-# We believe title is predictive. Visualize survival reates by sibsp, pclass, and title
+# title is predictive. Visualize survival reates by sibsp, pclass, and title
 ggplot(data.combined[1:891,], aes(x = sibsp, fill = survived)) +
   geom_bar() +
   facet_wrap(~pclass + title) + 
@@ -190,7 +186,7 @@ ggplot(data.combined[1:891,], aes(x = parch, fill = survived)) +
   labs(fill = "Survived")
 
 
-# Let's try some feature engineering. What about creating a family size feature?
+# some feature engineering
 temp.sibsp <- c(train$sibsp, test$sibsp)
 temp.parch <- c(train$parch, test$parch)
 data.combined$family.size <- as.factor(temp.sibsp + temp.parch + 1)
@@ -224,13 +220,11 @@ data.combined$ticket <- as.character(data.combined$ticket)
 data.combined$ticket[1:20]
 
 
-# There's no immediately apparent structure in the data, let's see if we can find some.
-# We'll start with taking a look at just the first char for each
 ticket.first.char <- ifelse(data.combined$ticket == "", " ", substr(data.combined$ticket, 1, 1))
 unique(ticket.first.char)
 
 
-# OK, we can make a factor for analysis purposes and visualize
+# make a factor for analysis purposes and visualize
 data.combined$ticket.first.char <- as.factor(ticket.first.char)
 
 # First, a high-level plot of the data
@@ -376,13 +370,6 @@ ggplot(data.combined[1:891,], aes(x = embarked, fill = survived)) +
   labs(fill = "Survived")
 
 
-#==============================================================================
-#
-# Video #4 - Exploratory Modeling
-#
-#==============================================================================
-
-
 library(randomForest)
 
 # Train a Random Forest with the default parameters using pclass & title
@@ -455,18 +442,6 @@ rf.7
 varImpPlot(rf.7)
 
 
-#==============================================================================
-#
-# Video #5 - Cross Validation
-#
-#==============================================================================
-
-
-# Before we jump into features engineering we need to establish a methodology
-# for estimating our error rate on the test set (i.e., unseen data). This is
-# critical, for without this we are more likely to overfit. Let's start with a 
-# submission of rf.5 to Kaggle to see if our OOB error estimate is accurate.
-
 # Subset our test records and features
 test.submit.df <- data.combined[892:1309, c("pclass", "title", "family.size")]
 
@@ -479,18 +454,10 @@ submit.df <- data.frame(PassengerId = rep(892:1309), Survived = rf.5.preds)
 
 write.csv(submit.df, file = "RF_SUB_20160215_1.csv", row.names = FALSE)
 
-# Our submission scores 0.79426, but the OOB predicts that we should score 0.8159.
-# Let's look into cross-validation using the caret package to see if we can get
+
 # more accurate estimates
 library(caret)
 library(doSNOW)
-
-
-# Research has shown that 10-fold CV repeated 10 times is the best place to start,
-# however there are no hard and fast rules - this is where the experience of the 
-# Data Scientist (i.e., the "art") comes into play. We'll start with 10-fold CV,
-# repeated 10 times and see how it goes.
-
 
 # Leverage caret to create 100 total folds, but ensure that the ratio of those
 # that survived and perished in each fold matches the overall training set. This
@@ -511,8 +478,6 @@ ctrl.1 <- trainControl(method = "repeatedcv", number = 10, repeats = 10,
                        index = cv.10.folds)
 
 
-# Set up doSNOW package for multi-core training. This is helpful as we're going
-# to be training a lot of trees.
 # NOTE - This works on Windows and Mac, unlike doMC
 cl <- makeCluster(6, type = "SOCK")
 registerDoSNOW(cl)
@@ -523,15 +488,14 @@ set.seed(34324)
 rf.5.cv.1 <- train(x = rf.train.5, y = rf.label, method = "rf", tuneLength = 3,
                    ntree = 1000, trControl = ctrl.1)
 
-#Shutdown cluster
+
 stopCluster(cl)
 
 # Check out results
 rf.5.cv.1
 
 
-# The above is only slightly more pessimistic than the rf.5 OOB prediction, but 
-# not pessimistic enough. Let's try 5-fold CV repeated 10 times.
+
 set.seed(5983)
 cv.5.folds <- createMultiFolds(rf.label, k = 5, times = 10)
 
@@ -545,7 +509,7 @@ set.seed(89472)
 rf.5.cv.2 <- train(x = rf.train.5, y = rf.label, method = "rf", tuneLength = 3,
                    ntree = 1000, trControl = ctrl.2)
 
-#Shutdown cluster
+
 stopCluster(cl)
 
 # Check out results
@@ -566,31 +530,15 @@ set.seed(94622)
 rf.5.cv.3 <- train(x = rf.train.5, y = rf.label, method = "rf", tuneLength = 3,
                    ntree = 64, trControl = ctrl.3)
 
-#Shutdown cluster
+
 stopCluster(cl)
 
 # Check out results
 rf.5.cv.3
 
 
-
-#==============================================================================
-#
-# Video #6 - Exploratory Modeling 2
-#
-#==============================================================================
-
-# Let's use a single decision tree to better understand what's going on with our
-# features. Obviously Random Forests are far more powerful than single trees,
-# but single trees have the advantage of being easier to understand.
-
-# Install and load packages
-#install.packages("rpart")
-#install.packages("rpart.plot")
 library(rpart)
 library(rpart.plot)
-
-# Per video #5, let's use 3-fold CV repeated 10 times 
 
 # Create utility function
 rpart.cv <- function(seed, training, labels, ctrl) {
@@ -815,15 +763,6 @@ rpart.3.cv.1
 # Plot
 prp(rpart.3.cv.1$finalModel, type = 0, extra = 1, under = TRUE)
 
-
-
-#==============================================================================
-#
-# Video #7 - Submitting, scoring, and some analysis.
-#
-#==============================================================================
-
-#
 # Rpart scores 0.80383
 #
 # Subset our test records and features
@@ -863,14 +802,7 @@ write.csv(submit.df, file = "RF_SUB_20160619_1.csv", row.names = FALSE)
 
 
 
-#
-# If we want to improve our model, a good place to start is focusing on where it
-# gets things wrong!
-#
-
-
-# First, let's explore our collection of features using mutual information to
-# gain some additional insight. Our intuition is that the plot of our tree
+# intuition is that the plot of our tree
 # should align well to the definition of mutual information.
 #install.packages("infotheo")
 library(infotheo)
@@ -890,7 +822,7 @@ mutinformation(rf.label, data.combined$ticket.party.size[1:891])
 mutinformation(rf.label, discretize(data.combined$avg.fare[1:891]))
 
 
-# OK, now let's leverage the tsne algorithm to create a 2-D representation of our data 
+# leverage the tsne algorithm to create a 2-D representation of our data 
 # suitable for visualization starting with folks our model gets right very often - folks
 # with titles other than 'Mr."
 #install.packages("Rtsne")
@@ -910,10 +842,6 @@ ggplot(NULL, aes(x = tsne.1$Y[indexes, 1], y = tsne.1$Y[indexes, 2],
   ggtitle("tsne 2D Visualization of Features for new.title Other than 'Mr.'")
 
 
-# To get a baseline, let's use conditional mutual information on the tsne X and
-# Y features for females and boys in 1st and 2nd class. The intuition here is that
-# the combination of these features should be higher than any individual feature
-# we looked at above.
 condinformation(most.correct$survived[indexes], discretize(tsne.1$Y[indexes,]))
 
 
@@ -922,9 +850,6 @@ condinformation(most.correct$survived[indexes], discretize(tsne.1$Y[indexes,]))
 condinformation(rf.label, data.combined[1:891, c("new.title", "pclass")])
 
 
-# OK, now let's take a look at adult males since our model has the biggest 
-# potential upside for improving (i.e., the tree predicts incorrectly for 86
-# adult males). Let's visualize with tsne.
 misters <- data.combined[data.combined$new.title == "Mr.",]
 indexes <- which(misters$survived != "None")
 
