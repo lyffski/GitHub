@@ -9,20 +9,19 @@ def are_anagrams(s1, s2):
     #increment occured char of string
     for ch in s1:
         if ch in freq1:
-            freq1[ch] += 1 
-        else: 
+            freq1[ch]+=1
+        else:
             freq1[ch] = 0
     for ch in s2:
         if ch in freq2:
             freq2[ch] += 1
         else:
             freq2[ch] = 0
-   
+
    # compare total of occured char of freq1 and freq2 of given strings
     for key in freq1:
         if freq1[key] != freq2[key]:
             return False
-    
     return True
 
 
