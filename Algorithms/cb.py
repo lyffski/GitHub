@@ -1,11 +1,8 @@
-li = [2,3,5,6]
-def func(x):
-        return x**x
+A = [1,2,3,4,5,6,7,8,9]
+noSum = 0
+for i in range(0, len(A)):
+    print(A[i])
+    
+    noSum = noSum + A[i]
 
-print(list(map(func, li)))
-import numpy as np
-a = [1,2,3]
-a[1:2] =[5,6]
-print(a)
-
-
+print(noSum)
