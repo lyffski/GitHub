@@ -22,3 +22,8 @@ print(x)
 
 '''x = kth_1largest(arr, 3)
 print(x)'''
+
+
+res = []
+res = res + [10]
+print(res)

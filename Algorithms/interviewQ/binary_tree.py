@@ -28,10 +28,23 @@ class Node:
         print( self.data),
         if self.right:
             self.right.PrintTree()
+            
+# Inorder traversal
+# Left -> Root -> Right
+    def inorderTraversal(self, root):
+        res = []
+        if root:
+            res = self.inorderTraversal(root.left)
+            res.append(root.data)
+            res = res + self.inorderTraversal(root.right)
+        return res
 
-# Use the insert method to add nodes
-root = Node(12)
-root.insert(6)
+
+root = Node(27)
 root.insert(14)
-root.insert(7)
-root.PrintTree()
+root.insert(35)
+root.insert(10)
+root.insert(19)
+root.insert(31)
+root.insert(42)
+print(root.inorderTraversal(root)) 
