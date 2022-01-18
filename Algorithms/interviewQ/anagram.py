@@ -26,3 +26,27 @@ def are_anagrams(s1, s2):
 
 
 print(are_anagrams("kali", "alik"))
+
+
+teas = {
+	'english_breakfast': 104,
+	'matcha_green_tea': 26,
+	'green_tea': 29,
+	'decaf_english_breakfast': 51,
+	'assam': 48,
+    'kac' : None
+}
+
+matcha = teas.get('matcha_green_tea')
+
+print(matcha)
+print(teas['matcha_green_tea'])
+print(teas.get("kac"))
+
+
+s = dict()
+
+s["kac"] = 2
+s["kfsd"] = "k"
+s.popitem()
+print(s)

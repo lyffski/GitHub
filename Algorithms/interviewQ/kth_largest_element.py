@@ -25,5 +25,5 @@ print(x)'''
 
 
 res = []
-res = res + [10]
+res = res + [10f]
 print(res)

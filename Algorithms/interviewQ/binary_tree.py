@@ -38,6 +38,18 @@ class Node:
             res.append(root.data)
             res = res + self.inorderTraversal(root.right)
         return res
+    
+    def findval(self, lkpval):
+        if lkpval < self.data:
+            if self.left is None:
+                return str(lkpval)+" Not Found"
+            return self.left.findval(lkpval)
+        elif lkpval > self.data:
+            if self.right is None:
+                return str(lkpval)+" Not Found"
+            return self.right.findval(lkpval)
+        else:
+            print(str(self.data) + ' is found')
 
 
 root = Node(27)
@@ -47,4 +59,5 @@ root.insert(10)
 root.insert(19)
 root.insert(31)
 root.insert(42)
+print(root.findval(42))
 print(root.inorderTraversal(root)) 
