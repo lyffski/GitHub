@@ -39,17 +39,32 @@ class Node:
             res = res + self.inorderTraversal(root.right)
         return res
     
-    def findval(self, lkpval):
-        if lkpval < self.data:
-            if self.left is None:
-                return str(lkpval)+" Not Found"
-            return self.left.findval(lkpval)
-        elif lkpval > self.data:
-            if self.right is None:
-                return str(lkpval)+" Not Found"
-            return self.right.findval(lkpval)
+# check existance if in tree
+    def exist_in_tree(self, root, val):
+        if root is None:
+            return 0
         else:
-            print(str(self.data) + ' is found')
+            in_left = self.exist_in_tree(root.left, val)
+            in_right = self.exist_in_tree(root.right, val)
+            return root.data == val or in_left or in_right 
+
+# sum all values of nodes (left -> right -> root)
+    def tree_sum(self, root):
+        if root is None:
+            return 0
+        else:
+            sumleft = self.tree_sum(root.left)
+            sumright = self.tree_sum(root.right)
+            return root.data + sumleft + sumright
+
+# display tree levels while indexin from 1
+    def tree_hight(self, root):
+        if root is None:
+            return 0
+        else:
+            left_hight = self.tree_hight(root.left)
+            right_hight = self.tree_hight(root.right)
+            return 1 + max(left_hight, right_hight) # +1 due to indexin from 0
 
 
 root = Node(27)
@@ -59,5 +74,14 @@ root.insert(10)
 root.insert(19)
 root.insert(31)
 root.insert(42)
-print(root.findval(42))
+
 print(root.inorderTraversal(root)) 
+print(root.tree_sum(root))
+print(root.tree_hight(root))
+print(root.exist_in_tree(root, 10))
+
+
+
+
+
+
