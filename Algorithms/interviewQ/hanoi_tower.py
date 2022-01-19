@@ -37,5 +37,5 @@ def grid_pattern(n,m):
 
 
 
-x = grid_pattern(1,1):
+x = grid_pattern(1,1)
 print(x)
