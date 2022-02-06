@@ -30,6 +30,13 @@ b = [[1, 3, 3],[3,3,3]]
 print(list(b))
 print(b)
 
+#list/map like expresion, store the whole list of value and thus use more space than genrators
+print(list(map((lambda x: x*x), range(1, 11))))
+#genertors prints only one value, and do not store the val
+double = (x*2 for x in range(10))
+print("Double: ", next(double)) #this val will be forget, once it is printed and next row willst at, only thing what will be remember is the index in generator, (see debugger and tree file)
+print("Double: ", next(double))
+print("Double: ", next(double))
 
 lst = range(1, 1001)
 

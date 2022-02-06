@@ -70,3 +70,52 @@ fib_seq = FibGenerator()
 
 for i in range(10):
     print("Fib :", next(fib_seq))
+
+
+
+from audioop import mul
+import random
+from re import M
+# lsit of 15 no. between 1 . 1000, and those 15 must me mulitpl of nine
+
+x = [x for x in [random.randint(1, 1001) for i in range(15)] if x % 9 == 0]
+print(x)
+
+
+
+multi_list = [[1,2,3],
+              [4,5,6],
+              [7,8,9]]
+print("k")
+print(len(multi_list[0]))
+
+a = [multi_list[i][0] for i in range(len(multi_list))]
+print(a)
+
+a = [multi_list[i][i] for i in range(len(multi_list))]
+print(a)
+
+a = [multi_list[1][i] for i in range(len(multi_list))]
+print(a)
+
+a = [multi_list[i][0+(len(multi_list[i])-1)-i] for i in range(len(multi_list))]
+print(a)
+
+
+def is_prime(num):
+    for i in range(2, num):
+        if num % i == 0:
+            return False
+        return True
+
+def gen_primes(max_val):
+    for i in range(max_val):
+        if is_prime(i):
+            yield i
+
+prime = gen_primes(15)
+print("Prime: {}".format(next(prime)))
+print("Prime: {}".format(next(prime)))
+print("Prime: {}".format(next(prime)))
+
+
