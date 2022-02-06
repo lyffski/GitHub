@@ -1,0 +1,66 @@
+Nullprodukt
+Substitution
+Polynomdivsion
+Newtonsches NÄhrungsverfahren
+Wurzelgleichungen
+Exponentialgleichungen
+Potenzfunktionen
+    Parabeln n-ter Ordung
+    Hyperbeln n-ter Ordung
+Elementare Wurzelfunctinen
+Ganzrationale Func.
+    Verhalten
+    Polynome
+Gebrochenerationale func.
+    senkrechte Asymptote
+    Verhalten in Unendlichen
+Logartihums func.
+e-func.
+    eigenschaften
+Trigonometreische func.
+    sinus
+    kosinus
+    allg. sin / cos
+Wurzelfunc.
+Zusammengesetzte func.
+Steckbriefaufgaben (unbekannte func. suchen/bestimmen)
+Stetigkeit
+Derivate
+Abletigusregeln
+    Kettenregel
+    Produktregel
+Grapisches Abletigusregeln
+    tagngente
+    Wendetagente
+Kurvendission
+    Def. bereich
+    Streckung & Stauchung in y-axis
+    Graphen verschieben und spigeln
+Symmetrei - Kurvendiscussion
+    Achsensymm.
+    Rotationsymm.
+    Extrempkt.
+    Punktsymm. zu beliebigen Pkt.
+    krümmung
+    Verhaten in Unendlichen limes
+    Umkehrfunc.
+Monotom 
+    Verhalten
+
+Integrale
+unbestimmte Integrale
+Intrationregeln
+Umgang mit Summen und Differenezen
+Linear Substitution
+
+Partielle Inegration
+Regeln
+Anwendung
+Inegration durch Substitution
+Logarithmisches Substitution
+FlÄcheninhalte und FlÄcheneinhalte
+besondersheiten bei bestimmten Integrals
+Uneigentliche Integrale
+Mittelwert-Integrale
+Rotationkörper - Integrale
+Numerisches Integration
