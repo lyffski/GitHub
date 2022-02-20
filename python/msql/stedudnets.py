@@ -151,9 +151,9 @@ class StudentDB:
         try:
             # Get connection for cursor
             self.cursor = self.conn.cursor()    #set the cureseor to beforehand defined query
-            self.cursor.execute(self.query)     #ececute the cursor with assigend query
+            self.cursor.execute(self.query)     #query is defined in other func. but due to self. can be accessed, ececute the cursor with assigend query
             # Check if a result is expected from the query
-            if result_expected:
+            if result_expected: #half needed ig
                 self.student_info = self.cursor.fetchall()
 
             # Move changes to DB, thus inda execute it
