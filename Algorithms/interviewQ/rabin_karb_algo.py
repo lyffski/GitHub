@@ -1,5 +1,5 @@
 
-# Following program is the python implementation of
+
 # Rabin Karp Algorithm given in CLRS book
  
 # d is the number of characters in the input alphabet
@@ -55,8 +55,8 @@ def search(pat, txt, q):
                 t = t+q
  
 # Driver Code
-txt = "GEEKS FOR GEEKS"
-pat = "GEEK"
+txt = "TOOL FOR TOOLS"
+pat = "TOOL"
  
 # A prime number
 q = 101
