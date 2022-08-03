@@ -101,4 +101,4 @@ console.log("a")
 
 u1 = new setUser("Layt", {age: 17, phone: new PhoneNum(49, 8034610), email: 'layt.mail@gmail.com', age: 17, address: new Address("Germany", )})
 
-u2 = new setUser("Leni", {age: 15, address: new Address("Germany")})
+u2 = new setUser("xxx", {age: 15, address: new Address("Germany")})

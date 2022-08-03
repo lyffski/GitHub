@@ -25,7 +25,7 @@ class HashFunction:
     # It doesn't make sense to make a 1000 item list
     # We can however use the mod function versus the
     # list size to make sure the items fit in our list.
-    # Also our goal is to make the list big enough to
+    # Also our goal is to make the list big enough to       
     # avoid collisions but not so big that it wastes
     # memory. A collision occurs when we try to put a
     # value in an index that already has data stored.

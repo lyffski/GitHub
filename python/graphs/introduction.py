@@ -103,7 +103,7 @@ class Graph:
         self.vertex_list[self.vertex_count] = Vertex(name)
         self.vertex_count += 1
 
-    # We will use an adjacency matrix that defines whether
+    # will use an adjacency matrix that defines whether
     # an edge lies between 2 vertices
     # Each row &column represents a single vertex and
     # a 1 lies in a cell if vertices connect

@@ -31,7 +31,7 @@ u1 = new setUser("Layt", {
 
 })
 
-u2 = new setUser("Leni", {
+u2 = new setUser("xxx", {
   Status: "Aristocrat",
   Grades: "S+",
   Element: "Light",
