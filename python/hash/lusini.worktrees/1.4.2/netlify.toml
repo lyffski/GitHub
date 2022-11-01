@@ -1,0 +1,36 @@
+[build]
+  ignore = "exit 0" 
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self' *.lusini.dev *.lusini.com *.netlify.app https://*.wistia.com https://*.wistia.net; frame-src 'self' *.lusini.dev *.lusini.com http://*.lusini.dev http://*.lusini.com https://fast.wistia.com https://fast.wistia.net *.facebook.com; connect-src 'self' *.lusini.dev *.lusini.com *.netlify.app *.getform.io getform.io *.contentful.com *.algolia.net *.algolianet.com https://widgets.trustedshops.com *.doubleclick.net *.google-analytics.com *.google.com *.google.de *.cookielaw.org https://*.litix.io https://*.wistia.com https://embedwistia-a.akamaihd.net https://api.glitch.com *.onetrust.com *.bing.com wss://chat.userlike.com wss://umd.userlike.com *.userlike.com userlike-cdn-widgets.s3-eu-west-1.amazonaws.com https://*.dy-api.eu; img-src 'self' data: aw1n.com *.cloudinary.com *.google.de *.google.com *.lusini.dev *.lusini.com *.google-analytics.com https://*.wistia.com https://*.wistia.net https://embedwistia-a.akamaihd.net https://glitch.com https://cdn.glitch.com https://avatars0.githubusercontent.com *.trustedshops.com *.facebook.com *.bing.com sslwidget.criteo.com api.userlike.com userlike-cdn-operators.s3-eu-west-1.amazonaws.com dq4irj27fs462.cloudfront.net; media-src 'self' blob: data: *.cloudinary.com *.google.de https://*.wistia.com https://*.wistia.net https://embedwistia-a.akamaihd.net dq4irj27fs462.cloudfront.net; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.netlify.app *.googletagmanager.com *.google.com *.cookielaw.org *.google.de *.doubleclick.net *.googleadservices.net *.googleadservices.com *.google-analytics.com https://*.wistia.com https://*.wistia.net https://src.litix.io https://button.glitch.me https://*.trustedshops.com *.googleapis.com *.bing.com *.dwin1.com *.facebook.net api.userlike.com userlike-cdn-widgets.s3-eu-west-1.amazonaws.com dq4irj27fs462.cloudfront.net d3dc1lgancj6l0.cloudfront.net; worker-src 'self' blob: *.wistia.com blob:; style-src 'self' 'unsafe-inline' blob: fonts.googleapis.com https://maxcdn.bootstrapcdn.com https://fast.wistia.com https://button.glitch.me *.googletagmanager.com; font-src 'self' data: fonts.gstatic.com https://*.wistia.com; frame-ancestors 'self' lusini.com *.lusini.com contentful.com *.contentful.com emmos-fireside.netlify.app; child-src blob:"
+
+# important for ab-tests. disables html caching for correct ab-routing
+[[headers]]
+  for = "*"
+  [headers.values]
+    cache-control = '''
+    max-age=0,
+    no-cache,
+    no-store,
+    must-revalidate'''
+
+[[headers]]
+  for = "*.json"
+  [headers.values]
+    cache-control = '''
+    public,
+    max-age=0,
+    must-revalidate'''
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    cache-control = '''
+    max-age=172800,
+    public,
+    must-revalidate'''
+
+[build.environment]
+  NODE_OPTIONS = "--max_old_space_size=8192"

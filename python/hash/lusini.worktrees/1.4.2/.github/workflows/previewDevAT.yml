@@ -1,0 +1,78 @@
+name: PR Branch deploy AT
+
+on:
+  pull_request:
+    branches: [develop]
+    types: [labeled]
+
+jobs:
+  deploy:
+    name: 'Deploy PR to Netlify'
+    if: contains( github.event.pull_request.labels.*.name, 'netlify build:dev_at')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get branch name
+        id: branch-name
+        uses: tj-actions/branch-names@v4.9
+
+      - name: Cache Base64
+        id: cache-base64
+        uses: actions/cache@v2
+        with:
+          path: .base64Cache
+          key: base64Cache
+
+      - uses: actions/checkout@v2
+
+      - name: Setup nodeJs
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          check-latest: true
+
+      - name: Cache Node Modules
+        id: cache-node-modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: node-modules-${{ hashFiles('yarn.lock') }}
+
+      - name: Install Dependencies
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: yarn install --frozen-lockfile
+
+      - name: Build App
+        run: npm run build:lusini_dev_de-at
+
+      - name: Deploy draft to Netlify
+        uses: semoal/action-netlify-deploy@master
+        id: netlify_preview
+        with:
+          github-token: ${{ secrets.ACTION_TOKEN }}
+          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID_DEV_DE_AT }}
+          build-dir: './public'
+          draft: true
+
+      - name: add de-at suffix
+        uses: mad9000/actions-find-and-replace-string@2
+        id: newurl1
+        with:
+          source: ${{ steps.netlify_preview.outputs.preview-url }}
+          find: 'netlify.app'
+          replace: 'netlify.app/de-at/'
+
+      - name: add basicauth suffix
+        uses: mad9000/actions-find-and-replace-string@2
+        id: newurl2
+        with:
+          source: ${{ steps.newurl1.outputs.value }}
+          find: 'https://'
+          replace: 'https://classreunion:T8J6UntqzRQWWEuBtVQHEGtwJLgbkGAz@'
+
+      - name: Comment PR
+        uses: thollander/actions-comment-pull-request@v1
+        with:
+          message: '[AT] Bitte diese URL in das Jira-Ticket zur Abnahmne pasten:<br /><br />${{ steps.newurl2.outputs.value }}'
+          GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}

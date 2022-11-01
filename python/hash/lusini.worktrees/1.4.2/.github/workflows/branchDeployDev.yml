@@ -1,0 +1,83 @@
+name: Deploy Dev
+
+on:
+  workflow_dispatch:
+    inputs:
+      netlifyBuildHookName:
+        description: 'the name/key for the buildHookId-secret in Github. eg: { SECRET_KEY: SECRET_VALUE } -> netlifyBuildHookName === SECRET_KEY'
+        required: true
+      branch:
+        description: 'the branch the should be deployed as branch deploy'
+        required: true
+      locale:
+        description: 'the locale env e.g. de-de'
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.inputs.branch }}
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Caching Gatsby
+        id: gatsby-cache-build
+        uses: actions/cache@v2
+        with:
+          path: |
+            public
+            .cache
+          key: ${{ runner.os }}-gatsby-build-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-gatsby-build-
+
+      - name: Cache Node Modules
+        id: cache-node-modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: node-modules-${{ hashFiles('yarn.lock') }}
+
+      - name: Cache Cypress binary
+        uses: actions/cache@v1
+        with:
+          path: ~/.cache/Cypress
+          key: cypress-${{ runner.os }}-cypress-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            cypress-${{ runner.os }}-cypress-
+
+      - name: Cache base64
+        uses: actions/cache@v1
+        with:
+          path: ~/.base64Cache
+          key: base64-${{ runner.os }}-base64-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            base64-${{ runner.os }}-base64-
+
+      - name: Install Dependencies
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: yarn install
+
+      - name: Building Gatsby site
+        run: yarn run build:lusini_dev_${{ github.event.inputs.locale }}
+        env:
+          GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
+
+      - name: save as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{ github.run_id }}
+          path: public
+
+      - name: trigger netlify build hook
+        run: curl -X POST -d '${{ github.run_id }}' "https://api.netlify.com/build_hooks/${{secrets[github.event.inputs.netlifyBuildHookName]}}?trigger_branch=${{ github.event.inputs.branch }}"

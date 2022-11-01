@@ -1,0 +1,1371 @@
+[
+  {
+    "timestamp": 1628758797707,
+    "files": [
+      {
+        "filename": "commons-********************.js",
+        "previous": 195878,
+        "size": 195881,
+        "diff": 3
+      },
+      {
+        "filename": "5e2a4920-********************.js",
+        "previous": 345,
+        "size": 345,
+        "diff": 0
+      },
+      {
+        "filename": "7-********************.js",
+        "previous": 1158,
+        "size": 1158,
+        "diff": 0
+      },
+      {
+        "filename": "webpack-runtime-********************.js",
+        "previous": 2214,
+        "size": 2213,
+        "diff": -1
+      },
+      {
+        "filename": "10-********************.js",
+        "previous": 1129,
+        "size": 1129,
+        "diff": 0
+      },
+      {
+        "filename": "11-********************.js",
+        "previous": 377,
+        "size": 377,
+        "diff": 0
+      },
+      {
+        "filename": "12-********************.js",
+        "previous": 645,
+        "size": 645,
+        "diff": 0
+      },
+      {
+        "filename": "13-********************.js",
+        "previous": 239,
+        "size": 239,
+        "diff": 0
+      },
+      {
+        "filename": "a22cbe4e-********************.js",
+        "previous": 24255,
+        "size": 24255,
+        "diff": 0
+      },
+      {
+        "filename": "algoliasearch-********************.js",
+        "previous": 7961,
+        "size": 7961,
+        "diff": 0
+      },
+      {
+        "filename": "algoliasearch-helper-********************.js",
+        "previous": 11429,
+        "size": 11429,
+        "diff": 0
+      },
+      {
+        "filename": "app-********************.js",
+        "previous": 33612,
+        "size": 33612,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-pages-404-tsx-********************.js",
+        "previous": 633,
+        "size": 633,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-pages-error-tsx-********************.js",
+        "previous": 431,
+        "size": 431,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-account-account-tsx-********************.js",
+        "previous": 991,
+        "size": 991,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-cart-cart-tsx-********************.js",
+        "previous": 1075,
+        "size": 1075,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-category-category-tsx-********************.js",
+        "previous": 1194,
+        "size": 1194,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-home-tsx-********************.js",
+        "previous": 534,
+        "size": 534,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-landing-page-tsx-********************.js",
+        "previous": 541,
+        "size": 541,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-newsletter-tsx-********************.js",
+        "previous": 1060,
+        "size": 1060,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-password-password-tsx-********************.js",
+        "previous": 943,
+        "size": 943,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-pdp-pdp-tsx-********************.js",
+        "previous": 15692,
+        "size": 15692,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-preview-tsx-********************.js",
+        "previous": 19645,
+        "size": 19645,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-search-search-tsx-********************.js",
+        "previous": 5244,
+        "size": 5244,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-self-service-tsx-********************.js",
+        "previous": 948,
+        "size": 948,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-service-service-tsx-********************.js",
+        "previous": 1443,
+        "size": 1443,
+        "diff": 0
+      },
+      {
+        "filename": "dbf3ce33-********************.js",
+        "previous": 94689,
+        "size": 94689,
+        "diff": 0
+      },
+      {
+        "filename": "framework-********************.js",
+        "previous": 42015,
+        "size": 42015,
+        "diff": 0
+      },
+      {
+        "filename": "polyfill-********************.js",
+        "previous": 27280,
+        "size": 27280,
+        "diff": 0
+      },
+      {
+        "filename": "38-********************.js",
+        "previous": 139,
+        "size": 139,
+        "diff": 0
+      },
+      {
+        "filename": "39-********************.js",
+        "previous": 137,
+        "size": 137,
+        "diff": 0
+      },
+      {
+        "filename": "40-********************.js",
+        "previous": 137,
+        "size": 137,
+        "diff": 0
+      },
+      {
+        "filename": "5dcbdbe4b367c38d1d35534a84330e7d0b01799e-********************.js",
+        "previous": 12225,
+        "size": 12225,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-magazine-magazine-article-tsx-********************.js",
+        "previous": 1460,
+        "size": 1460,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-magazine-magazine-tsx-********************.js",
+        "previous": 1782,
+        "size": 1782,
+        "diff": 0
+      },
+      {
+        "filename": "41-********************.js",
+        "previous": 137,
+        "size": 137,
+        "diff": 0
+      },
+      {
+        "filename": "48abc128322031efbbc548311d341870fd8f40a3-********************.js",
+        "previous": 5914,
+        "size": 5914,
+        "diff": 0
+      },
+      {
+        "filename": "91aaa02ea8ab085c8d472099d0cf3ee3c3674b2e-********************.js",
+        "previous": 17139,
+        "size": 17139,
+        "diff": 0
+      },
+      {
+        "filename": "99f895fea9cef6081a3bcccee9ff1c5b17f54cdb-********************.js",
+        "previous": 5911,
+        "size": 5911,
+        "diff": 0
+      },
+      {
+        "filename": "9-********************.js",
+        "previous": 3753,
+        "size": 3753,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-series-series-tsx-********************.js",
+        "previous": 8329,
+        "size": 8329,
+        "diff": 0
+      },
+      {
+        "filename": "37-********************.js",
+        "previous": 4875,
+        "size": 4875,
+        "diff": 0
+      }
+    ]
+  },
+  {
+    "timestamp": 1628756425632,
+    "files": [
+      {
+        "filename": "commons-********************.js",
+        "previous": 57907,
+        "size": 195878,
+        "diff": 137971
+      },
+      {
+        "filename": "5e2a4920-********************.js",
+        "previous": 345,
+        "size": 345,
+        "diff": 0
+      },
+      {
+        "filename": "7-********************.js",
+        "previous": 1160,
+        "size": 1158,
+        "diff": -2
+      },
+      {
+        "filename": "webpack-runtime-********************.js",
+        "previous": 2210,
+        "size": 2214,
+        "diff": 4
+      },
+      {
+        "filename": "10-********************.js",
+        "previous": 3755,
+        "size": 1129,
+        "diff": -2626
+      },
+      {
+        "filename": "11-********************.js",
+        "previous": 1127,
+        "size": 377,
+        "diff": -750
+      },
+      {
+        "filename": "12-********************.js",
+        "previous": 378,
+        "size": 645,
+        "diff": 267
+      },
+      {
+        "filename": "13-********************.js",
+        "previous": 239,
+        "size": 239,
+        "diff": 0
+      },
+      {
+        "filename": "14-********************.js",
+        "previous": 644,
+        "size": 0,
+        "diff": -644
+      },
+      {
+        "filename": "a22cbe4e-********************.js",
+        "previous": 24252,
+        "size": 24255,
+        "diff": 3
+      },
+      {
+        "filename": "algoliasearch-********************.js",
+        "previous": 7743,
+        "size": 7961,
+        "diff": 218
+      },
+      {
+        "filename": "algoliasearch-helper-********************.js",
+        "previous": 11427,
+        "size": 11429,
+        "diff": 2
+      },
+      {
+        "filename": "app-********************.js",
+        "previous": 31532,
+        "size": 33612,
+        "diff": 2080
+      },
+      {
+        "filename": "component---src-pages-404-tsx-********************.js",
+        "previous": 660,
+        "size": 633,
+        "diff": -27
+      },
+      {
+        "filename": "component---src-pages-error-tsx-********************.js",
+        "previous": 458,
+        "size": 431,
+        "diff": -27
+      },
+      {
+        "filename": "component---src-theme-templates-account-account-tsx-********************.js",
+        "previous": 1004,
+        "size": 991,
+        "diff": -13
+      },
+      {
+        "filename": "component---src-theme-templates-cart-cart-tsx-********************.js",
+        "previous": 1087,
+        "size": 1075,
+        "diff": -12
+      },
+      {
+        "filename": "component---src-theme-templates-category-category-tsx-********************.js",
+        "previous": 1156,
+        "size": 1194,
+        "diff": 38
+      },
+      {
+        "filename": "component---src-theme-templates-home-tsx-********************.js",
+        "previous": 545,
+        "size": 534,
+        "diff": -11
+      },
+      {
+        "filename": "component---src-theme-templates-landing-page-tsx-********************.js",
+        "previous": 603,
+        "size": 541,
+        "diff": -62
+      },
+      {
+        "filename": "component---src-theme-templates-newsletter-tsx-********************.js",
+        "previous": 1076,
+        "size": 1060,
+        "diff": -16
+      },
+      {
+        "filename": "component---src-theme-templates-password-password-tsx-********************.js",
+        "previous": 954,
+        "size": 943,
+        "diff": -11
+      },
+      {
+        "filename": "component---src-theme-templates-pdp-pdp-tsx-********************.js",
+        "previous": 22323,
+        "size": 15692,
+        "diff": -6631
+      },
+      {
+        "filename": "component---src-theme-templates-preview-tsx-********************.js",
+        "previous": 28388,
+        "size": 19645,
+        "diff": -8743
+      },
+      {
+        "filename": "component---src-theme-templates-search-search-tsx-********************.js",
+        "previous": 948,
+        "size": 5244,
+        "diff": 4296
+      },
+      {
+        "filename": "component---src-theme-templates-self-service-tsx-********************.js",
+        "previous": 959,
+        "size": 948,
+        "diff": -11
+      },
+      {
+        "filename": "component---src-theme-templates-service-service-tsx-********************.js",
+        "previous": 1467,
+        "size": 1443,
+        "diff": -24
+      },
+      {
+        "filename": "dbf3ce33-********************.js",
+        "previous": 94669,
+        "size": 94689,
+        "diff": 20
+      },
+      {
+        "filename": "framework-********************.js",
+        "previous": 42014,
+        "size": 42015,
+        "diff": 1
+      },
+      {
+        "filename": "polyfill-********************.js",
+        "previous": 27160,
+        "size": 27280,
+        "diff": 120
+      },
+      {
+        "filename": "38-********************.js",
+        "previous": 3757,
+        "size": 139,
+        "diff": -3618
+      },
+      {
+        "filename": "39-********************.js",
+        "previous": 139,
+        "size": 137,
+        "diff": -2
+      },
+      {
+        "filename": "40-********************.js",
+        "previous": 137,
+        "size": 137,
+        "diff": 0
+      },
+      {
+        "filename": "283fca018bdcb0252f95eab44b0eb0c013f3b595-********************.js",
+        "previous": 5740,
+        "size": 0,
+        "diff": -5740
+      },
+      {
+        "filename": "31ae88a3f383f93c4ef738bd68d0e92a274b4ef0-********************.js",
+        "previous": 21079,
+        "size": 0,
+        "diff": -21079
+      },
+      {
+        "filename": "0afa5b96abed7091124495e5fca52cc9175fda5d-********************.js",
+        "previous": 19509,
+        "size": 0,
+        "diff": -19509
+      },
+      {
+        "filename": "5dcbdbe4b367c38d1d35534a84330e7d0b01799e-********************.js",
+        "previous": 10953,
+        "size": 12225,
+        "diff": 1272
+      },
+      {
+        "filename": "8-********************.js",
+        "previous": 961,
+        "size": 0,
+        "diff": -961
+      },
+      {
+        "filename": "15-********************.js",
+        "previous": 238,
+        "size": 0,
+        "diff": -238
+      },
+      {
+        "filename": "component---src-theme-templates-magazine-magazine-article-tsx-********************.js",
+        "previous": 1453,
+        "size": 1460,
+        "diff": 7
+      },
+      {
+        "filename": "component---src-theme-templates-magazine-magazine-tsx-********************.js",
+        "previous": 1783,
+        "size": 1782,
+        "diff": -1
+      },
+      {
+        "filename": "41-********************.js",
+        "previous": 137,
+        "size": 137,
+        "diff": 0
+      },
+      {
+        "filename": "42-********************.js",
+        "previous": 137,
+        "size": 0,
+        "diff": -137
+      },
+      {
+        "filename": "48abc128322031efbbc548311d341870fd8f40a3-********************.js",
+        "previous": 0,
+        "size": 5914,
+        "diff": 5914
+      },
+      {
+        "filename": "91aaa02ea8ab085c8d472099d0cf3ee3c3674b2e-********************.js",
+        "previous": 0,
+        "size": 17139,
+        "diff": 17139
+      },
+      {
+        "filename": "99f895fea9cef6081a3bcccee9ff1c5b17f54cdb-********************.js",
+        "previous": 0,
+        "size": 5911,
+        "diff": 5911
+      },
+      {
+        "filename": "9-********************.js",
+        "previous": 0,
+        "size": 3753,
+        "diff": 3753
+      },
+      {
+        "filename": "component---src-theme-templates-series-series-tsx-********************.js",
+        "previous": 0,
+        "size": 8329,
+        "diff": 8329
+      },
+      {
+        "filename": "37-********************.js",
+        "previous": 0,
+        "size": 4875,
+        "diff": 4875
+      }
+    ]
+  },
+  {
+    "timestamp": 1625133265527,
+    "files": [
+      {
+        "filename": "commons-********************.js",
+        "previous": 56744,
+        "size": 57907,
+        "diff": 1163
+      },
+      {
+        "filename": "32909aa94a16e3f3f9b418a16180c644a6e8ae04-********************.js",
+        "previous": 5692,
+        "size": 0,
+        "diff": -5692
+      },
+      {
+        "filename": "fdd6bb74a46e7a5917a5028a3aa640eeff655c08-********************.js",
+        "previous": 8276,
+        "size": 0,
+        "diff": -8276
+      },
+      {
+        "filename": "cad73d6d19d76c3ca1232f2c716a55e3beb228de-********************.js",
+        "previous": 17442,
+        "size": 0,
+        "diff": -17442
+      },
+      {
+        "filename": "5e2a4920-********************.js",
+        "previous": 343,
+        "size": 345,
+        "diff": 2
+      },
+      {
+        "filename": "a63c74b5bf79768bc19167ee9f2bba9014c38e48-********************.js",
+        "previous": 10202,
+        "size": 0,
+        "diff": -10202
+      },
+      {
+        "filename": "6-********************.js",
+        "previous": 1159,
+        "size": 0,
+        "diff": -1159
+      },
+      {
+        "filename": "7-********************.js",
+        "previous": 961,
+        "size": 1160,
+        "diff": 199
+      },
+      {
+        "filename": "webpack-runtime-********************.js",
+        "previous": 2155,
+        "size": 2210,
+        "diff": 55
+      },
+      {
+        "filename": "9-********************.js",
+        "previous": 3753,
+        "size": 0,
+        "diff": -3753
+      },
+      {
+        "filename": "10-********************.js",
+        "previous": 1129,
+        "size": 3755,
+        "diff": 2626
+      },
+      {
+        "filename": "11-********************.js",
+        "previous": 377,
+        "size": 1127,
+        "diff": 750
+      },
+      {
+        "filename": "12-********************.js",
+        "previous": 238,
+        "size": 378,
+        "diff": 140
+      },
+      {
+        "filename": "13-********************.js",
+        "previous": 644,
+        "size": 239,
+        "diff": -405
+      },
+      {
+        "filename": "14-********************.js",
+        "previous": 239,
+        "size": 644,
+        "diff": 405
+      },
+      {
+        "filename": "a22cbe4e-********************.js",
+        "previous": 24253,
+        "size": 24252,
+        "diff": -1
+      },
+      {
+        "filename": "algoliasearch-********************.js",
+        "previous": 7961,
+        "size": 7743,
+        "diff": -218
+      },
+      {
+        "filename": "algoliasearch-helper-********************.js",
+        "previous": 11427,
+        "size": 11427,
+        "diff": 0
+      },
+      {
+        "filename": "app-********************.js",
+        "previous": 33641,
+        "size": 31532,
+        "diff": -2109
+      },
+      {
+        "filename": "component---src-pages-404-tsx-********************.js",
+        "previous": 660,
+        "size": 660,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-pages-error-tsx-********************.js",
+        "previous": 458,
+        "size": 458,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-account-account-tsx-********************.js",
+        "previous": 886,
+        "size": 1004,
+        "diff": 118
+      },
+      {
+        "filename": "component---src-theme-templates-cart-cart-tsx-********************.js",
+        "previous": 1035,
+        "size": 1087,
+        "diff": 52
+      },
+      {
+        "filename": "component---src-theme-templates-category-category-tsx-********************.js",
+        "previous": 1161,
+        "size": 1156,
+        "diff": -5
+      },
+      {
+        "filename": "component---src-theme-templates-home-tsx-********************.js",
+        "previous": 545,
+        "size": 545,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-landing-page-tsx-********************.js",
+        "previous": 603,
+        "size": 603,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-newsletter-tsx-********************.js",
+        "previous": 1076,
+        "size": 1076,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-password-password-tsx-********************.js",
+        "previous": 954,
+        "size": 954,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-pdp-pdp-tsx-********************.js",
+        "previous": 20327,
+        "size": 22323,
+        "diff": 1996
+      },
+      {
+        "filename": "component---src-theme-templates-preview-tsx-********************.js",
+        "previous": 38133,
+        "size": 28388,
+        "diff": -9745
+      },
+      {
+        "filename": "component---src-theme-templates-search-search-tsx-********************.js",
+        "previous": 946,
+        "size": 948,
+        "diff": 2
+      },
+      {
+        "filename": "component---src-theme-templates-self-service-tsx-********************.js",
+        "previous": 922,
+        "size": 959,
+        "diff": 37
+      },
+      {
+        "filename": "component---src-theme-templates-service-service-tsx-********************.js",
+        "previous": 1466,
+        "size": 1467,
+        "diff": 1
+      },
+      {
+        "filename": "dbf3ce33-********************.js",
+        "previous": 94687,
+        "size": 94669,
+        "diff": -18
+      },
+      {
+        "filename": "framework-********************.js",
+        "previous": 42013,
+        "size": 42014,
+        "diff": 1
+      },
+      {
+        "filename": "polyfill-********************.js",
+        "previous": 27278,
+        "size": 27160,
+        "diff": -118
+      },
+      {
+        "filename": "36-********************.js",
+        "previous": 5566,
+        "size": 0,
+        "diff": -5566
+      },
+      {
+        "filename": "37-********************.js",
+        "previous": 139,
+        "size": 0,
+        "diff": -139
+      },
+      {
+        "filename": "38-********************.js",
+        "previous": 137,
+        "size": 3757,
+        "diff": 3620
+      },
+      {
+        "filename": "39-********************.js",
+        "previous": 137,
+        "size": 139,
+        "diff": 2
+      },
+      {
+        "filename": "40-********************.js",
+        "previous": 137,
+        "size": 137,
+        "diff": 0
+      },
+      {
+        "filename": "283fca018bdcb0252f95eab44b0eb0c013f3b595-********************.js",
+        "previous": 0,
+        "size": 5740,
+        "diff": 5740
+      },
+      {
+        "filename": "31ae88a3f383f93c4ef738bd68d0e92a274b4ef0-********************.js",
+        "previous": 0,
+        "size": 21079,
+        "diff": 21079
+      },
+      {
+        "filename": "0afa5b96abed7091124495e5fca52cc9175fda5d-********************.js",
+        "previous": 0,
+        "size": 19509,
+        "diff": 19509
+      },
+      {
+        "filename": "5dcbdbe4b367c38d1d35534a84330e7d0b01799e-********************.js",
+        "previous": 0,
+        "size": 10953,
+        "diff": 10953
+      },
+      {
+        "filename": "8-********************.js",
+        "previous": 0,
+        "size": 961,
+        "diff": 961
+      },
+      {
+        "filename": "15-********************.js",
+        "previous": 0,
+        "size": 238,
+        "diff": 238
+      },
+      {
+        "filename": "component---src-theme-templates-magazine-magazine-article-tsx-********************.js",
+        "previous": 0,
+        "size": 1453,
+        "diff": 1453
+      },
+      {
+        "filename": "component---src-theme-templates-magazine-magazine-tsx-********************.js",
+        "previous": 0,
+        "size": 1783,
+        "diff": 1783
+      },
+      {
+        "filename": "41-********************.js",
+        "previous": 0,
+        "size": 137,
+        "diff": 137
+      },
+      {
+        "filename": "42-********************.js",
+        "previous": 0,
+        "size": 137,
+        "diff": 137
+      }
+    ]
+  },
+  {
+    "timestamp": 1623061394508,
+    "files": [
+      {
+        "filename": "commons-********************.js",
+        "previous": 56676,
+        "size": 56744,
+        "diff": 68
+      },
+      {
+        "filename": "32909aa94a16e3f3f9b418a16180c644a6e8ae04-********************.js",
+        "previous": 5692,
+        "size": 5692,
+        "diff": 0
+      },
+      {
+        "filename": "fdd6bb74a46e7a5917a5028a3aa640eeff655c08-********************.js",
+        "previous": 8276,
+        "size": 8276,
+        "diff": 0
+      },
+      {
+        "filename": "cad73d6d19d76c3ca1232f2c716a55e3beb228de-********************.js",
+        "previous": 17442,
+        "size": 17442,
+        "diff": 0
+      },
+      {
+        "filename": "5e2a4920-********************.js",
+        "previous": 343,
+        "size": 343,
+        "diff": 0
+      },
+      {
+        "filename": "a63c74b5bf79768bc19167ee9f2bba9014c38e48-********************.js",
+        "previous": 10202,
+        "size": 10202,
+        "diff": 0
+      },
+      {
+        "filename": "6-********************.js",
+        "previous": 1159,
+        "size": 1159,
+        "diff": 0
+      },
+      {
+        "filename": "7-********************.js",
+        "previous": 961,
+        "size": 961,
+        "diff": 0
+      },
+      {
+        "filename": "webpack-runtime-********************.js",
+        "previous": 2151,
+        "size": 2155,
+        "diff": 4
+      },
+      {
+        "filename": "9-********************.js",
+        "previous": 3753,
+        "size": 3753,
+        "diff": 0
+      },
+      {
+        "filename": "10-********************.js",
+        "previous": 1129,
+        "size": 1129,
+        "diff": 0
+      },
+      {
+        "filename": "11-********************.js",
+        "previous": 377,
+        "size": 377,
+        "diff": 0
+      },
+      {
+        "filename": "12-********************.js",
+        "previous": 238,
+        "size": 238,
+        "diff": 0
+      },
+      {
+        "filename": "13-********************.js",
+        "previous": 644,
+        "size": 644,
+        "diff": 0
+      },
+      {
+        "filename": "14-********************.js",
+        "previous": 239,
+        "size": 239,
+        "diff": 0
+      },
+      {
+        "filename": "a22cbe4e-********************.js",
+        "previous": 24253,
+        "size": 24253,
+        "diff": 0
+      },
+      {
+        "filename": "algoliasearch-********************.js",
+        "previous": 7961,
+        "size": 7961,
+        "diff": 0
+      },
+      {
+        "filename": "algoliasearch-helper-********************.js",
+        "previous": 11427,
+        "size": 11427,
+        "diff": 0
+      },
+      {
+        "filename": "app-********************.js",
+        "previous": 33644,
+        "size": 33641,
+        "diff": -3
+      },
+      {
+        "filename": "component---src-pages-404-tsx-********************.js",
+        "previous": 660,
+        "size": 660,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-pages-error-tsx-********************.js",
+        "previous": 458,
+        "size": 458,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-account-account-tsx-********************.js",
+        "previous": 886,
+        "size": 886,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-cart-cart-tsx-********************.js",
+        "previous": 1035,
+        "size": 1035,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-category-category-tsx-********************.js",
+        "previous": 1151,
+        "size": 1161,
+        "diff": 10
+      },
+      {
+        "filename": "component---src-theme-templates-home-tsx-********************.js",
+        "previous": 533,
+        "size": 545,
+        "diff": 12
+      },
+      {
+        "filename": "component---src-theme-templates-landing-page-tsx-********************.js",
+        "previous": 595,
+        "size": 603,
+        "diff": 8
+      },
+      {
+        "filename": "component---src-theme-templates-newsletter-tsx-********************.js",
+        "previous": 1069,
+        "size": 1076,
+        "diff": 7
+      },
+      {
+        "filename": "component---src-theme-templates-password-password-tsx-********************.js",
+        "previous": 954,
+        "size": 954,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-pdp-pdp-tsx-********************.js",
+        "previous": 20315,
+        "size": 20327,
+        "diff": 12
+      },
+      {
+        "filename": "component---src-theme-templates-preview-tsx-********************.js",
+        "previous": 38094,
+        "size": 38133,
+        "diff": 39
+      },
+      {
+        "filename": "component---src-theme-templates-search-search-tsx-********************.js",
+        "previous": 934,
+        "size": 946,
+        "diff": 12
+      },
+      {
+        "filename": "component---src-theme-templates-self-service-tsx-********************.js",
+        "previous": 922,
+        "size": 922,
+        "diff": 0
+      },
+      {
+        "filename": "component---src-theme-templates-service-service-tsx-********************.js",
+        "previous": 1466,
+        "size": 1466,
+        "diff": 0
+      },
+      {
+        "filename": "dbf3ce33-********************.js",
+        "previous": 94687,
+        "size": 94687,
+        "diff": 0
+      },
+      {
+        "filename": "framework-********************.js",
+        "previous": 42013,
+        "size": 42013,
+        "diff": 0
+      },
+      {
+        "filename": "polyfill-********************.js",
+        "previous": 27278,
+        "size": 27278,
+        "diff": 0
+      },
+      {
+        "filename": "36-********************.js",
+        "previous": 5566,
+        "size": 5566,
+        "diff": 0
+      },
+      {
+        "filename": "37-********************.js",
+        "previous": 139,
+        "size": 139,
+        "diff": 0
+      },
+      {
+        "filename": "38-********************.js",
+        "previous": 137,
+        "size": 137,
+        "diff": 0
+      },
+      {
+        "filename": "39-********************.js",
+        "previous": 137,
+        "size": 137,
+        "diff": 0
+      },
+      {
+        "filename": "40-********************.js",
+        "previous": 137,
+        "size": 137,
+        "diff": 0
+      }
+    ]
+  },
+  {
+    "timestamp": 1622537660837,
+    "files": [
+      {
+        "filename": "commons-********************.js",
+        "previous": 0,
+        "size": 56676,
+        "diff": 56676
+      },
+      {
+        "filename": "32909aa94a16e3f3f9b418a16180c644a6e8ae04-********************.js",
+        "previous": 0,
+        "size": 5692,
+        "diff": 5692
+      },
+      {
+        "filename": "fdd6bb74a46e7a5917a5028a3aa640eeff655c08-********************.js",
+        "previous": 0,
+        "size": 8276,
+        "diff": 8276
+      },
+      {
+        "filename": "cad73d6d19d76c3ca1232f2c716a55e3beb228de-********************.js",
+        "previous": 0,
+        "size": 17442,
+        "diff": 17442
+      },
+      {
+        "filename": "5e2a4920-********************.js",
+        "previous": 0,
+        "size": 343,
+        "diff": 343
+      },
+      {
+        "filename": "a63c74b5bf79768bc19167ee9f2bba9014c38e48-********************.js",
+        "previous": 0,
+        "size": 10202,
+        "diff": 10202
+      },
+      {
+        "filename": "6-********************.js",
+        "previous": 0,
+        "size": 1159,
+        "diff": 1159
+      },
+      {
+        "filename": "7-********************.js",
+        "previous": 0,
+        "size": 961,
+        "diff": 961
+      },
+      {
+        "filename": "webpack-runtime-********************.js",
+        "previous": 0,
+        "size": 2151,
+        "diff": 2151
+      },
+      {
+        "filename": "9-********************.js",
+        "previous": 0,
+        "size": 3753,
+        "diff": 3753
+      },
+      {
+        "filename": "10-********************.js",
+        "previous": 0,
+        "size": 1129,
+        "diff": 1129
+      },
+      {
+        "filename": "11-********************.js",
+        "previous": 0,
+        "size": 377,
+        "diff": 377
+      },
+      {
+        "filename": "12-********************.js",
+        "previous": 0,
+        "size": 238,
+        "diff": 238
+      },
+      {
+        "filename": "13-********************.js",
+        "previous": 0,
+        "size": 644,
+        "diff": 644
+      },
+      {
+        "filename": "14-********************.js",
+        "previous": 0,
+        "size": 239,
+        "diff": 239
+      },
+      {
+        "filename": "a22cbe4e-********************.js",
+        "previous": 0,
+        "size": 24253,
+        "diff": 24253
+      },
+      {
+        "filename": "algoliasearch-********************.js",
+        "previous": 0,
+        "size": 7961,
+        "diff": 7961
+      },
+      {
+        "filename": "algoliasearch-helper-********************.js",
+        "previous": 0,
+        "size": 11427,
+        "diff": 11427
+      },
+      {
+        "filename": "app-********************.js",
+        "previous": 0,
+        "size": 33644,
+        "diff": 33644
+      },
+      {
+        "filename": "component---src-pages-404-tsx-********************.js",
+        "previous": 0,
+        "size": 660,
+        "diff": 660
+      },
+      {
+        "filename": "component---src-pages-error-tsx-********************.js",
+        "previous": 0,
+        "size": 458,
+        "diff": 458
+      },
+      {
+        "filename": "component---src-theme-templates-account-account-tsx-********************.js",
+        "previous": 0,
+        "size": 886,
+        "diff": 886
+      },
+      {
+        "filename": "component---src-theme-templates-cart-cart-tsx-********************.js",
+        "previous": 0,
+        "size": 1035,
+        "diff": 1035
+      },
+      {
+        "filename": "component---src-theme-templates-category-category-tsx-********************.js",
+        "previous": 0,
+        "size": 1151,
+        "diff": 1151
+      },
+      {
+        "filename": "component---src-theme-templates-home-tsx-********************.js",
+        "previous": 0,
+        "size": 533,
+        "diff": 533
+      },
+      {
+        "filename": "component---src-theme-templates-landing-page-tsx-********************.js",
+        "previous": 0,
+        "size": 595,
+        "diff": 595
+      },
+      {
+        "filename": "component---src-theme-templates-newsletter-tsx-********************.js",
+        "previous": 0,
+        "size": 1069,
+        "diff": 1069
+      },
+      {
+        "filename": "component---src-theme-templates-password-password-tsx-********************.js",
+        "previous": 0,
+        "size": 954,
+        "diff": 954
+      },
+      {
+        "filename": "component---src-theme-templates-pdp-pdp-tsx-********************.js",
+        "previous": 0,
+        "size": 20315,
+        "diff": 20315
+      },
+      {
+        "filename": "component---src-theme-templates-preview-tsx-********************.js",
+        "previous": 0,
+        "size": 38094,
+        "diff": 38094
+      },
+      {
+        "filename": "component---src-theme-templates-search-search-tsx-********************.js",
+        "previous": 0,
+        "size": 934,
+        "diff": 934
+      },
+      {
+        "filename": "component---src-theme-templates-self-service-tsx-********************.js",
+        "previous": 0,
+        "size": 922,
+        "diff": 922
+      },
+      {
+        "filename": "component---src-theme-templates-service-service-tsx-********************.js",
+        "previous": 0,
+        "size": 1466,
+        "diff": 1466
+      },
+      {
+        "filename": "dbf3ce33-********************.js",
+        "previous": 0,
+        "size": 94687,
+        "diff": 94687
+      },
+      {
+        "filename": "framework-********************.js",
+        "previous": 0,
+        "size": 42013,
+        "diff": 42013
+      },
+      {
+        "filename": "polyfill-********************.js",
+        "previous": 0,
+        "size": 27278,
+        "diff": 27278
+      },
+      {
+        "filename": "36-********************.js",
+        "previous": 0,
+        "size": 5566,
+        "diff": 5566
+      },
+      {
+        "filename": "37-********************.js",
+        "previous": 0,
+        "size": 139,
+        "diff": 139
+      },
+      {
+        "filename": "38-********************.js",
+        "previous": 0,
+        "size": 137,
+        "diff": 137
+      },
+      {
+        "filename": "39-********************.js",
+        "previous": 0,
+        "size": 137,
+        "diff": 137
+      },
+      {
+        "filename": "40-********************.js",
+        "previous": 0,
+        "size": 137,
+        "diff": 137
+      }
+    ]
+  }
+]

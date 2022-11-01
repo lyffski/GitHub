@@ -1,0 +1,8 @@
+{
+  "widgetFolders": ["src"],
+  "extensions": "tsx|ts|js",
+  "outPath": "firescout.d.ts",
+  "useGrep": false,
+  "fixturesFolder": "firescout-mocks",
+  "tsFixtures": true
+}

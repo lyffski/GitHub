@@ -1,0 +1,8 @@
+/*
+  Basic-Auth: classreunion:T8J6UntqzRQWWEuBtVQHEGtwJLgbkGAz
+  Content-Security-Policy: default-src 'self' *.lusini.dev *.lusini.com http://*.lusini.dev http://*.lusini.com https://*.wistia.com https://*.wistia.net; frame-src 'self' *.lusini.dev *.lusini.com http://*.lusini.dev http://*.lusini.com https://fast.wistia.com https://fast.wistia.net; connect-src 'self' *.lusini.dev *.lusini.com *.contentful.com *.algolia.net *.algolianet.com *.doubleclick.net *.google-analytics.com *.cookielaw.org https://*.litix.io https://*.wistia.com https://embedwistia-a.akamaihd.net https://api.glitch.com; img-src 'self' data: *.cloudinary.com *.lusini.dev *.lusini.com *.google-analytics.com https://*.wistia.com https://*.wistia.net https://embedwistia-a.akamaihd.net https://glitch.com https://cdn.glitch.com https://avatars0.githubusercontent.com; media-src 'self' blob: data: *.cloudinary.com https://*.wistia.com https://*.wistia.net https://embedwistia-a.akamaihd.net; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.googletagmanager.com *.cookielaw.org *.google.com *.doubleclick.net *.googleadservices.net *.googleadservices.com *.google-analytics.com https://*.wistia.com https://*.wistia.net https://src.litix.io https://button.glitch.me; worker-src 'self' blob: *.wistia.com blob:; style-src 'self' 'unsafe-inline' blob: fonts.googleapis.com https://fast.wistia.com https://button.glitch.me; font-src 'self' data: fonts.gstatic.com https://*.wistia.com; frame-ancestors 'self' lusini.com *.lusini.com contentful.com *.contentful.com emmos-fireside.netlify.app; child-src blob:;
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  
+/de-de/manifest.webmanifest
+  X-Frame-Options: SAMEORIGIN  

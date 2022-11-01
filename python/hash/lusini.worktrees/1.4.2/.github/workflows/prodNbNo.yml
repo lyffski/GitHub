@@ -1,0 +1,43 @@
+name: nb-no - Deploy Prod
+
+on: workflow_dispatch
+
+concurrency:
+  group: 'nb-no'
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: 'nb-no - Deploy Prod'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup nodeJs
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          check-latest: true
+
+      - name: Cache Node Modules
+        id: cache-node-modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: node-modules-${{ hashFiles('yarn.lock') }}
+
+      - name: Install Dependencies
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: yarn install --frozen-lockfile
+
+      - name: NB_NO - Build
+        run: npm run build:lusini_nb-no
+      - name: NB_NO - Deploy prod Netlify
+        uses: South-Paw/action-netlify-deploy@v1.2.0
+        with:
+          github-token: ${{ secrets.ACTION_TOKEN }}
+          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID_PROD_NB_NO }}
+          build-dir: './public'
+          config-path: './netlify.toml'

@@ -1,0 +1,9 @@
+/*
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  
+/de-de/manifest.webmanifest
+  X-Frame-Options: SAMEORIGIN  
+
+/de-de/extensions/storybook/
+  Content-Security-Policy: style-src * data: blob: 'unsafe-inline'; font-src * data: blob: 'unsafe-inline';

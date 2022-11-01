@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 5 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrow-left</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Path-2" stroke="#2B271F" transform="translate(5.000000, 5.000000) scale(-1, 1) translate(-5.000000, -5.000000) ">
+            <polyline transform="translate(5.149802, 5.149802) scale(-1, 1) rotate(45.000000) translate(-5.149802, -5.149802) " points="2.04960317 2 2 8.29960317 8.29960317 8.25"></polyline>
+        </g>
+    </g>
+</svg>

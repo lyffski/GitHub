@@ -1,0 +1,7 @@
+https://lusini-com.netlify.app/*            https://www.lusini.com/:splat                       301!
+
+/nb-no/pdp/*                                /nb-no/pdp                                          200
+
+/nb-no/series/*                             /nb-no/series                                       200
+
+/nb-no/*                                    /nb-no/404                                          404

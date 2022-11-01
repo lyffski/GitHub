@@ -1,0 +1,14 @@
+{
+  "env": {
+    "base": "https://dev.lusini.com:8000",
+    "firescoutTsFixtures": true
+  },
+  "testFiles": "**/*.test.ts",
+  "integrationFolder": "src",
+  "retries": {
+    "runMode": 2,
+    "openMode": 1
+  },
+  "video": false,
+  "screenshotOnRunFailure": false
+}
