@@ -1,9 +1,0 @@
-.cache
-.base64Cache
-.vscode
-package.json
-package-lock.json
-yarn.lock
-public
-node_modules
-fireside-app

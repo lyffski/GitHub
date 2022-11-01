@@ -1,6 +1,0 @@
-export { default as text } from './Text'
-export { default as number } from './Number'
-export { default as email } from './Email'
-export { default as select } from './Select'
-export { default as radioGroup } from './RadioGroup'
-export { default as checkboxGroup } from './CheckboxGroup'
